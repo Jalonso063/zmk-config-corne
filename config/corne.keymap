@@ -42,12 +42,12 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #   |   $   |  %  |   |  ^   |  &  |  *  |  (  |  )  |      |
-// | CTRL |  ctrl + ctrl   |     |      |       |     |   |  {   |  }  | "|" |  "  |     |      |
+// | CTRL | ALT |     |      |       |     |   |  {   |  }  | "|" |  "  |     |      |
 // | SHFT |     |     | COPY | PASTE |     |   |  _   |  +  |     |     |     |  ~   |
 //                    | MAC  |  LY3  | ENT |   | CTRL |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH     &kp DLLR      &kp PRCNT    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &mt LCTRL LCTRL   &trans &trans       &trans        &trans       &kp LBRC  &kp RBRC  &kp PIPE        &kp DQT  &trans   &trans
+   &kp LCTRL &kp LALT   &trans &trans       &trans        &trans       &kp LBRC  &kp RBRC  &kp PIPE        &kp DQT  &trans   &trans
    &kp LSHFT &trans   &trans &kp K_COPY   &kp K_PASTE   &trans       &kp UNDER &kp PLUS  &trans          &trans   &trans   &kp TILDE
                              &kp LGUI &mo 3   &kp RET   &kp LCTRL    &trans    &kp LALT
                         >;
@@ -55,14 +55,14 @@
 
                 config_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |     |     |  UP |     | HOME |  END | 
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     | LFT | DWN | RGT |      |  ENT |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |  UP |     | HOME |  END | 
+// | CTRL | ALT |     |     |     |     |   |     | LFT | DWN | RGT |      |  ENT |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |      |      |
 //                    | MAC |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans     &trans       &trans       &trans       &trans       &trans            &trans  &trans    &kp UP    &trans    &kp HOME &kp END
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans  &kp LEFT  &kp DOWN  &kp RIGHT &trans   &kp RET
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans            &trans  &trans    &trans    &trans    &trans   &trans
+   &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans    &trans    &kp UP    &trans     &kp HOME  &kp END
+   &kp LCTRL   &kp LALT     &trans       &trans       &trans       &trans            &trans    &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &kp RET
+   &kp LSHFT   &trans       &trans       &trans       &trans       &trans            &trans    &trans    &trans    &trans     &trans    &trans
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
